@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-def UN(Y, X):
+def UN(X, Y):
     Input = pd.DataFrame({'Num':np.arange(X,Y+1), 'Tracker':('')}).set_index('Num')
     Prime = []
     while len(Input.index)>0:
